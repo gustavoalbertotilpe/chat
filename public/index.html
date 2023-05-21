@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./assets/css/app.css"/>
+</head>
+<body>
+    <div class="page" id="loginPage">
+       <div class="containerLoginPage">
+            <h1>Apelido</h1>
+            <input type="text" name="nome" id="loginNameInput" autofocus="true"/>
+            <label for="">Cor</label>
+            <input type="color" name="cor" id="cor"/>
+       </div>
+    </div>
+
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">
+            
+            </ul>
+
+            <ul class="userList">
+                
+            </ul>
+        </div>
+
+        <div class="chatInput">
+            <input type="text" name="chat" id="chatTextInput" placeholder="Digite uma mensagem" autofocus/>
+        </div>
+    </div>
+
+    <script src="./assets/js/client-dist/socket.io.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
